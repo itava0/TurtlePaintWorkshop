@@ -7,6 +7,8 @@ import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.Serial;
+import java.io.Serializable;
 import java.net.URL;
 import java.util.Map;
 import java.util.TreeMap;
@@ -35,8 +37,9 @@ import javax.imageio.ImageIO;
  *
  * @author Luther Tychonievich. Released to the public domain.
  */
-public class Turtle {
+public class Turtle implements Serializable {
     /// version number based on date of creation
+    @Serial
     @SuppressWarnings("unused")
     private static final long serialVersionUID = 20140120L;
 

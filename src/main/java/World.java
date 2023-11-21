@@ -9,6 +9,7 @@ import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.Serial;
 import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
@@ -46,6 +47,7 @@ import javax.swing.JLabel;
  */
 public class World extends JFrame {
     /// version number based on date of creation
+    @Serial
     private static final long serialVersionUID = 20130902L;
 
     private BufferedImage overlay, ground, back, front;
